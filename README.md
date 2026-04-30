@@ -1,2 +1,3 @@
-# ArielsPortfolio
-I created a portfolio website that gives detailed information of my past projects, internships, and hobbies. 
+# Ariel's Portfolio
+This repository was created to showcase my previous projects, internships, and hobbies. 
+The website was hosted via Vercel
