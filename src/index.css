@@ -1,0 +1,81 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;  line-height: 1.5;
+  font-weight: 400;
+
+  /* Keep the theme behavior you already have */
+  color-scheme: light dark;
+  color: #ffffffde;
+  background-color: #BFC6C4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive-safe defaults */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* Optional: make headings scale better on phones */
+h1 {
+  font-size: clamp(28px, 4vw, 52px);
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@keyframes floatGlow {
+  0%, 100% { transform: translateY(0px) scale(1); opacity: 0.25; }
+  50%      { transform: translateY(-18px) scale(1.08); opacity: 0.40; }
+}
+
+@keyframes floatImage {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-10px); }
+}
