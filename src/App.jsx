@@ -6,6 +6,7 @@ import About from "./aboutme";
 import Work from "./work";
 import Publication from "./publication";
 import Hobbies from "./hobbies";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   return (
