@@ -1,4 +1,10 @@
 import { useState } from "react";
+import kuka from "./assets/ag6dt.jpg";
+import management from "./assets/management.mp4";
+import eosgroup from "./assets/eosgroup.png";
+import otherme from "./assets/othersme.png";
+import hydrocat from "./assets/Hydrocat.mp4";
+
 export default function WorkExperience() {
 
   const [expanded, setExpanded] = useState({});
@@ -36,7 +42,7 @@ export default function WorkExperience() {
             {expanded[0] ? "Show Less" : "Read More"}
           </button>
           <img
-            src="src/assets/ag6dt.jpg"
+            src={kuka}
             alt="AG-6 Kuka Arm Digital Twin"
             className="w-full rounded-xl shadow-lg"
           />
@@ -69,7 +75,7 @@ export default function WorkExperience() {
             {expanded[1] ? "Show Less" : "Read More"}
           </button>
           <img
-            src="src/assets/eosgroup.png"
+            src={eosgroup}
             alt="EOS Project"
             className="w-full rounded-xl shadow-lg"
           />
@@ -106,7 +112,7 @@ export default function WorkExperience() {
           muted
           playsInline
           >
-            <source src="src/assets/Hydrocat.mp4" type="video/mp4" />
+            <source src={hydrocat} type="video/mp4" />
           </video>
         </div>
 
@@ -137,7 +143,7 @@ export default function WorkExperience() {
           muted
           playsInline
           >
-            <source src="src/assets/management.mp4" type="video/mp4" />
+            <source src={management} type="video/mp4" />
           </video>
         </div>
 
@@ -161,7 +167,7 @@ export default function WorkExperience() {
             {expanded[4] ? "Show Less" : "Read More"}
           </button>
           <img
-            src="src/assets/othersme.png"
+            src={otherme}
             alt="Database Platform"
             className="w-full rounded-xl shadow-lg"
           />
