@@ -4,6 +4,7 @@ import management from "./assets/management.mp4";
 import eosgroup from "./assets/eosgroup.png";
 import otherme from "./assets/othersme.png";
 import hydrocat from "./assets/Hydrocat.mp4";
+import loc from "./assets/libraryofcongress.jpg";
 
 export default function WorkExperience() {
 
@@ -22,6 +23,40 @@ export default function WorkExperience() {
       </h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-2 gap-16 items-start">
+
+        <div className=" bg-[#E8E2D8] w-full min-w-0 border-4 rounded-xl border-[#BFC6C4] p-3">
+          <h3 className="text-2xl font-semibold mb-3 text-[#6F8F72]">
+            Library of Congress Internship - Software Engineer Intern
+          </h3>
+          <p className={`text-gray-700 mb-2 ${expanded[0] ? "" : "line-clamp-5"}`}>
+            At the Library of Congress, I was able to be part of the Office of the Chief Information Officer (OCIO) team. 
+            The project I was assigned to focused on the modernization of the Congressional Research Service (CRS) application, 
+            specifically moving the application from .NET Framework to ASP.NET Core. The goal of the modernization was to improve 
+            the application's performance and make it more compatible with Mac, Linux, and Windows, while also optimizing it for cloud 
+            services and incorporating a microservices architecture.
+
+            I contributed to the project by creating unit tests for the CRS API backend. These unit tests served as a safety net 
+            for future development, allowing developers to make changes to the application while making sure core functionality and 
+            expected results were not accidentally affected. I developed 126 unit tests using xUnit and Moq for an enterprise ASP.NET Core (.NET 10) 
+            modernization project. This ultimately brought the automated unit test coverage to 84%, covering 1,176 code blocks.
+
+            Through this internship, I gained more experience working with enterprise-level software and development practices, 
+            including Agile/Scrum methodology, Azure DevOps, ASP.NET Core, Controllers, Interfaces, Models, Entity Framework, C#, 
+            dependency injection, and testing edge cases. 
+          </p>
+
+          <button
+            onClick={() => toggle(0)}
+            className="text-[#6F8F72] font-semibold hover:underline mb-4"
+          >
+            {expanded[0] ? "Show Less" : "Read More"}
+          </button>
+          <img
+            src={loc}
+            alt="Library of Congress Image"
+            className="w-full rounded-xl shadow-lg"
+          />
+        </div>
 
         <div className=" bg-[#E8E2D8] w-full min-w-0 border-4 rounded-xl border-[#BFC6C4] p-3">
           <h3 className="text-2xl font-semibold mb-3 text-[#6F8F72]">
@@ -82,7 +117,7 @@ export default function WorkExperience() {
         </div>
 
         <div className=" bg-[#E8E2D8] w-full min-w-0 border-4 rounded-xl border-[#BFC6C4] p-3">
-          <h3 className="text-lg font-semibold mb-5 text-[#6F8F72]">
+          <h3 className="text-md font-semibold mb-1 text-[#6F8F72]">
             Hydrocat Autonomous Deep Learning Boat - Research Assistant
           </h3>
           <p className={`text-gray-700 mb-2 ${expanded[2] ? "" : "line-clamp-5"}`}>

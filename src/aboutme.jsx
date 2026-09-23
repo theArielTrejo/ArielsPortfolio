@@ -1,6 +1,7 @@
 import aboutmepic from "./assets/aboutme.jpg";
 import eosLogo from "./assets/eoslogo.png";
 import iamLogo from "./assets/utrgvlogo.png";
+import locLogo from "./assets/loclogo.png";
 
 export default function About() {
   return (
@@ -21,10 +22,10 @@ export default function About() {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-                I’ve worked on projects involving full-stack development, databases, digital twins, 
+                I’ve worked on projects involving full-stack development, unit testing, databases, digital twins, 
                 game development, machine learning with YOLO for visual detection, and implementing 
                 AI-driven solutions for web applications. I’ve gained real-world experience through 
-                my two internships at EOS and my role as a Research Assistant at the Institute of 
+                my three internships at the Library of Congress, EOS, and my role as a Research Assistant at the Institute of 
                 Advanced Manufacturing at UTRGV.
                 Scroll down to learn more about my journey and the projects I’ve built.
             </p>
@@ -56,33 +57,50 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* LOGOS ROW */}
-                    <div className="mt-30 flex justify-center gap-6">
+                    {/* LOGOS PYRAMID */}
+                    <div className="mt-5 flex flex-col items-center gap-6">
+                        {/* TOP LOGO */}
                         <a
-                            href="https://www.eos.info/"
+                            href="https://www.loc.gov/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-5 transition-transform duration-300 hover:-translate-y-1 hover:scale-105"
+                            className="transition-transform duration-300 hover:-translate-y-1 hover:scale-130"
                         >
                             <img
-                            src={eosLogo}
-                            alt="EOS logo"
-                            className="h-3 object-contain"
+                                src={locLogo}
+                                alt="Library of Congress logo"
+                                className="w-50 h-auto object-contain"
                             />
                         </a>
 
-                        <a
-                            href="https://www.utrgv.edu/iam/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="transition-transform duration-300 hover:-translate-y-1 hover:scale-105"
-                        >
-                            <img
-                            src={iamLogo}
-                            alt="Institute of Advanced Manufacturing logo"
-                            className="h-3 object-contain"
-                            />
-                        </a>
+                        {/* BOTTOM ROW */}
+                        <div className="flex justify-center gap-10">
+                            <a
+                                href="https://www.eos.info/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-transform duration-300 hover:-translate-y-1 hover:scale-150"
+                            >
+                                <img
+                                    src={eosLogo}
+                                    alt="EOS logo"
+                                    className="w-50 h-auto object-contain"
+                                />
+                            </a>
+
+                            <a
+                                href="https://www.utrgv.edu/iam/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="transition-transform duration-300 hover:-translate-y-1 hover:scale-150"
+                            >
+                                <img
+                                    src={iamLogo}
+                                    alt="Institute of Advanced Manufacturing logo"
+                                    className="w-50 h-auto object-contain"
+                                />
+                            </a>
+                        </div>
                     </div>
 
                 </div>
